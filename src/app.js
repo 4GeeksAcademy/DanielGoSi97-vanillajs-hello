@@ -15,13 +15,6 @@ function NumRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-function GeneradorDeExcusas() {
-  let ranWho = NumRandom(who);
-  let ranWhat = NumRandom(what);
-  let ranAction = NumRandom(action);
-  let ranWhen = NumRandom(when);
-  let excusa = ranWho+" "+ranAction+" "+ranWhat+" "+ranWhen;
-  document.getElementById('excuse').innerHTML = excusa;
+let GeneradorDeExcusas = NumRandom(who)+" "+NumRandom(what)+" "+NumRandom(action)+" "+NumRandom(when);
+document.getElementById('excuse').innerHTML = GeneradorDeExcusas;
 }
-
-GeneradorDeExcusas();}
